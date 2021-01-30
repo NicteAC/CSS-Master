@@ -9,6 +9,12 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: "fjalla";    
+    src: url("fonts/FjallaOne-Regular.ttf") format("truetype");
+     font-weight: normal;
+    font-style: normal;
+}
 /*ESTILOS GENERALES*/
 *{
     padding: 0px;
@@ -193,8 +199,7 @@ text-shadow: 0px 0px 1px #ccc;
     margin: 0px auto;
 }
 /*barra Lateral*/
-#aside, #frase{
-    clear: both;
+#aside, #frase{    
     width: 200px;
     float: left;
     margin: 30px;
@@ -204,6 +209,7 @@ text-shadow: 0px 0px 1px #ccc;
     font-family: sans-serif, Arial, Helvetica;
 }
 #frase{
+   float: left;
     width: 180px;
     padding: 10px;
     font-size: 14px;
@@ -262,4 +268,39 @@ text-shadow: 0px 0px 1px #ccc;
 #aside label{
     margin: 0px auto;
     text-align: center;
+}
+/*Secciones*/
+#sections{
+    float: right;
+    width: 75%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#sections .titulo{
+    font-size: 24px;
+    font-family: fjalla;
+    font-weight: normal;
+    letter-spacing: 1px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+#sections section{
+    margin: 40px;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 4px #c9c9c9;
+    color: #333333;
+    font-size: 16px;
+    overflow: hidden;
+}
+.hola{
+    margin: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.date{
+    color: gray;
+    font-size: 14px;
 }
