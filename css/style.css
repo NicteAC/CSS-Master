@@ -17,6 +17,22 @@
 body{
     background-image: url(../img/paven.png);
 }
+a{
+    color: #529125;
+    text-decoration: none;
+}
+a:visited{
+    color: #529125;
+}
+a:hover{
+    color: #285616;
+}
+.red{
+    color: #9b2422 !important;
+}
+.blue{
+    color: #0c73f2 !important;
+}
 /*Formularios*/
 input[type="text"],
 input[type="email"],
@@ -177,7 +193,8 @@ text-shadow: 0px 0px 1px #ccc;
     margin: 0px auto;
 }
 /*barra Lateral*/
-#aside{
+#aside, #frase{
+    clear: both;
     width: 200px;
     float: left;
     margin: 30px;
@@ -185,6 +202,12 @@ text-shadow: 0px 0px 1px #ccc;
     border: 1px solid #cccccc;
     box-shadow: 0px 2px 2px #ccc;
     font-family: sans-serif, Arial, Helvetica;
+}
+#frase{
+    width: 180px;
+    padding: 10px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 #aside .widget{
     display: block;
@@ -206,8 +229,37 @@ text-shadow: 0px 0px 1px #ccc;
     text-align: center;
     padding-top: 2px;
     padding-bottom: 2px;
+    margin-bottom: 15px;
     background: #f2f3f2;
     border: 1px solid #ccc;
     border-left: none;
     border-right: none;
+}
+#aside li{
+    margin-top: 8px;
+    margin-bottom: 5px;
+    margin-left: 20px;
+    list-style: square;
+}
+/*FORMULARIOS BARRA LATERAL*/
+#aside div label,
+#aside div input[type="text"],
+#aside div input[type="email"],
+#aside div input[type="password"],
+#aside div a{
+    display: block;
+    width: 95%;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+#aside div input[type="button"],
+#aside div input[type="submit"],
+#aside div button{
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+#aside input,
+#aside label{
+    margin: 0px auto;
+    text-align: center;
 }
